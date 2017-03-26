@@ -1,0 +1,8 @@
+<md-list *ngIf="todos.length > 0">
+  <md-list-item *ngFor="let todo of todos" [class.completed]="todo.complete">
+    <app-todo-list-item
+        [todo]="todo"
+        (toggleComplete)="onToggleTodoComplete($event)"
+        (remove)="onRemoveTodo($event)"></app-todo-list-item>
+  </md-list-item>
+</md-list>
