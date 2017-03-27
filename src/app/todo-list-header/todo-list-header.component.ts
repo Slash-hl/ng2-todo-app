@@ -11,7 +11,7 @@ export class TodoListHeaderComponent {
   newTodo: Todo = new Todo();
 
   @Output()
-  add: EventEmitter<Todo> = new EventEmitter();
+  add: EventEmitter<Todo> = new EventEmitter(false);
 
   constructor() {
   }

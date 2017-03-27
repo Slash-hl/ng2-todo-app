@@ -1,4 +1,5 @@
 <div class="view">
-  <md-checkbox disableRipple (click)="toggleTodoComplete(todo)">{{todo.title}}</md-checkbox>
+  <md-checkbox disableRipple (click)="toggleTodoComplete(todo)"
+  [(ngModel)]="todo.complete">{{todo.title}}</md-checkbox>
   <md-icon (click)="removeTodo(todo)">delete_forever</md-icon>
 </div>

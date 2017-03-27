@@ -11,16 +11,18 @@ export class TodoListItemComponent {
   @Input() todo: Todo;
 
   @Output()
-  remove: EventEmitter<Todo> = new EventEmitter();
+  remove: EventEmitter<Todo> = new EventEmitter(false);
 
   @Output()
-  toggleComplete: EventEmitter<Todo> = new EventEmitter();
+  updateTodo: EventEmitter<any> = new EventEmitter(false);
 
   constructor() {
   }
 
   toggleTodoComplete(todo: Todo) {
-    this.toggleComplete.emit(todo);
+    this.updateTodo.emit({
+      complete: !todo.complete
+    });
   }
 
   removeTodo(todo: Todo) {
