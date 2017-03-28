@@ -3,7 +3,7 @@ import 'rxjs/add/operator/map';
 import { Injectable } from '@angular/core';
 import { Headers, Http, Request, RequestMethod, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
-import { Todo } from 'app/todo';
+import { Todo } from './../../../todo/todo';
 import { API_TODOS_URL } from './constants';
 
 

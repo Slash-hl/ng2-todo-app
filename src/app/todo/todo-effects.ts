@@ -10,7 +10,6 @@ import { Observable } from 'rxjs/Observable';
 import { ApiService } from 'app/shared';
 import { TodoActions } from './todo-actions';
 
-
 @Injectable()
 export class TodoEffects {
   constructor(

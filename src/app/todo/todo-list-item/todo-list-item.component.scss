@@ -1,0 +1,9 @@
+.todo-list-item {
+    height: 20px;
+
+    &__remove-btn {
+        display: inline-block;
+        border: none;
+        background-color: transparent;
+    }
+}

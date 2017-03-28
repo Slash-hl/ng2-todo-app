@@ -2,8 +2,7 @@ import { Action, ActionReducer } from '@ngrx/store';
 import { Todo } from './todo';
 import { TodoActions } from './todo-actions';
 
-
-export const todoReducer: ActionReducer<Todo[]> = (state: Todo[] = [], {payload, type}: Action) => {
+export function todoReducer(state: Todo[] = [], {payload, type}: Action) : any[] {
   switch (type) {
     case TodoActions.CREATE_TODO_FULFILLED:
       return [ ...state, payload.todo ];

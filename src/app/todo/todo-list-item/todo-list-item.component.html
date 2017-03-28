@@ -1,0 +1,9 @@
+<div class="todo-list-item">
+  <span>
+    <md-checkbox disableRipple (click)="toggleTodoComplete(todo)"
+    [(ngModel)]="todo.complete">{{todo.title}}</md-checkbox>
+  </span>
+  <button class="todo-list-item__remove-btn">
+    <md-icon (click)="removeTodo(todo)">delete_forever</md-icon>
+  </button>
+</div>

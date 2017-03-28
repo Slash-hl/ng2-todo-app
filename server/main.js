@@ -6,7 +6,7 @@ const morgan = require('morgan');
 const app = express();
 
 app.set('host', 'localhost');
-app.set('port', 3001);
+app.set('port', 4201);
 
 app.use(morgan('dev'));
 
