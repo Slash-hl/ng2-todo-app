@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { MaterialModule } from '@angular/material';
-import 'hammerjs';
 
 import { SharedModule } from 'app/shared';
 import { TodoRoutingModule } from './todo-routing.module';
