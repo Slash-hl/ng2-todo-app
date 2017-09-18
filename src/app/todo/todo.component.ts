@@ -25,8 +25,8 @@ export class TodoComponent {
     this.todoService.deleteTodo(todo);
   }
 
-  // get todos() {
-  //   return this.todoService.getAllTodos();
-  // }
+  get todos() {
+     return this.todoService.getAllTodos();
+  }
 
 }

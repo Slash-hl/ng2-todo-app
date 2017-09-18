@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "server:api": "cross-env NODE_ENV=development nodemon -w 'server/*.js' server/main.js"
+    "api": "cross-env NODE_ENV=development nodemon -w 'server/*.js' server/main.js"
   },
   "private": true,
   "dependencies": {
@@ -49,6 +49,7 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "lowdb": "^0.16.0",
     "morgan": "^1.8.1",
+    "node-sass": "^4.5.3",
     "node-uuid": "^1.4.8",
     "nodemon": "^1.11.0",
     "npm-run-all": "^4.0.2",

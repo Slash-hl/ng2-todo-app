@@ -14,6 +14,10 @@ export class TodoService {
     store.dispatch(this.actions.fetchTodos());
   }
 
+  getAllTodos() {
+    return this.todos$;
+  }
+
   addTodo(todo: Todo): void {
     this.store.dispatch(
       this.actions.createTodo(todo)
